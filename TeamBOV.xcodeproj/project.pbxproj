@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C1212F51A27999800C9F2B9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1212F41A27999800C9F2B9 /* MainViewController.swift */; };
+		3C1212F71A279A9E00C9F2B9 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C1212F61A279A9E00C9F2B9 /* LocalAuthentication.framework */; };
+		3C1212F91A279ED100C9F2B9 /* authPhoto.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 3C1212F81A279ED100C9F2B9 /* authPhoto.JPG */; };
 		3C7EB41F1A1941BD00FADD1F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7EB41E1A1941BD00FADD1F /* Parse.framework */; };
 		3C7EB4211A1955B700FADD1F /* AccountDetailTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7EB4201A1955B700FADD1F /* AccountDetailTableView.swift */; };
 		3C7EB4231A196D2100FADD1F /* Hud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7EB4221A196D2100FADD1F /* Hud.swift */; };
@@ -59,6 +62,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C1212F41A27999800C9F2B9 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3C1212F61A279A9E00C9F2B9 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		3C1212F81A279ED100C9F2B9 /* authPhoto.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = authPhoto.JPG; sourceTree = "<group>"; };
 		3C7EB41E1A1941BD00FADD1F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		3C7EB4201A1955B700FADD1F /* AccountDetailTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountDetailTableView.swift; sourceTree = "<group>"; };
 		3C7EB4221A196D2100FADD1F /* Hud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hud.swift; sourceTree = "<group>"; };
@@ -110,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C1212F71A279A9E00C9F2B9 /* LocalAuthentication.framework in Frameworks */,
 				EC4361361A17E06A0031B198 /* Bolts.framework in Frameworks */,
 				EC4361341A17DF4E0031B198 /* libz.dylib in Frameworks */,
 				EC4361271A17DAF50031B198 /* Foundation.framework in Frameworks */,
@@ -171,6 +178,7 @@
 			children = (
 				EC4360EE1A17DA6C0031B198 /* AppDelegate.swift */,
 				EC43613B1A1907220031B198 /* DataSource.swift */,
+				3C1212F41A27999800C9F2B9 /* MainViewController.swift */,
 				EC8358421A19A5FC0062908E /* MainTableView.swift */,
 				EC580AD81A1931E20059E8A6 /* SelectionTableView.swift */,
 				EC4360F21A17DA6C0031B198 /* Main.storyboard */,
@@ -189,6 +197,7 @@
 		EC4360EC1A17DA6C0031B198 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3C1212F81A279ED100C9F2B9 /* authPhoto.JPG */,
 				EC9523491A2139AF00D47EC4 /* SalesSheet.pdf */,
 				EC8358461A1A588A0062908E /* CustomNavigationBar.swift */,
 				3C7EB4221A196D2100FADD1F /* Hud.swift */,
@@ -218,6 +227,7 @@
 		EC4361281A17DB120031B198 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3C1212F61A279A9E00C9F2B9 /* LocalAuthentication.framework */,
 				EC4361351A17E06A0031B198 /* Bolts.framework */,
 				EC4361331A17DF4E0031B198 /* libz.dylib */,
 				EC4361261A17DAF50031B198 /* Foundation.framework */,
@@ -352,6 +362,7 @@
 				EC4360F41A17DA6C0031B198 /* Main.storyboard in Resources */,
 				EC4360F91A17DA6C0031B198 /* LaunchScreen.xib in Resources */,
 				EC4360F61A17DA6C0031B198 /* Images.xcassets in Resources */,
+				3C1212F91A279ED100C9F2B9 /* authPhoto.JPG in Resources */,
 				EC95234A1A2139AF00D47EC4 /* SalesSheet.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +400,7 @@
 				EC4360EF1A17DA6C0031B198 /* AppDelegate.swift in Sources */,
 				EC95234F1A214DCC00D47EC4 /* SalesCategoryTableView.swift in Sources */,
 				EC9523481A21142D00D47EC4 /* InventoryItemTableView.swift in Sources */,
+				3C1212F51A27999800C9F2B9 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +537,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TeamBOV/TeamBOV-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -543,6 +556,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TeamBOV/TeamBOV-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

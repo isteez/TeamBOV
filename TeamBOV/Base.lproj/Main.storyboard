@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Fd2-L4-Zoa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="78z-QE-qNb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -462,9 +462,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Owk-eB-Oyc">
-                                                    <rect key="frame" x="15" y="13" width="105" height="21"/>
+                                                    <rect key="frame" x="15" y="11" width="105" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="105" id="hzC-oV-XqK"/>
+                                                        <constraint firstAttribute="width" constant="105" id="tgn-K5-9ep"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -478,10 +478,11 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="eSW-LC-Ztl" firstAttribute="trailing" secondItem="OCd-Id-hhf" secondAttribute="trailingMargin" id="VHy-JU-F8d"/>
-                                                <constraint firstItem="eSW-LC-Ztl" firstAttribute="leading" secondItem="Owk-eB-Oyc" secondAttribute="trailing" constant="27" id="jNE-Cs-EiM"/>
-                                                <constraint firstItem="Owk-eB-Oyc" firstAttribute="leading" secondItem="OCd-Id-hhf" secondAttribute="leadingMargin" constant="7" id="sZx-KN-BUT"/>
+                                                <constraint firstItem="Owk-eB-Oyc" firstAttribute="top" secondItem="OCd-Id-hhf" secondAttribute="topMargin" constant="3" id="exd-UU-wxM"/>
+                                                <constraint firstItem="Owk-eB-Oyc" firstAttribute="leading" secondItem="OCd-Id-hhf" secondAttribute="leadingMargin" constant="7" id="fBl-wy-5rA"/>
+                                                <constraint firstItem="Owk-eB-Oyc" firstAttribute="centerY" secondItem="OCd-Id-hhf" secondAttribute="centerY" id="t07-ta-0P1"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="eSW-LC-Ztl" secondAttribute="bottom" constant="-4" id="wi6-Nw-Jom"/>
-                                                <constraint firstItem="Owk-eB-Oyc" firstAttribute="baseline" secondItem="eSW-LC-Ztl" secondAttribute="baseline" id="xcJ-Ao-FYl"/>
+                                                <constraint firstItem="eSW-LC-Ztl" firstAttribute="leading" secondItem="Owk-eB-Oyc" secondAttribute="trailing" constant="27" id="xm2-PO-H58"/>
                                                 <constraint firstItem="eSW-LC-Ztl" firstAttribute="top" secondItem="OCd-Id-hhf" secondAttribute="topMargin" constant="1" id="zxc-OW-0s3"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -1364,6 +1365,54 @@
             </objects>
             <point key="canvasLocation" x="3251" y="1925"/>
         </scene>
+        <!--Main View Controller-->
+        <scene sceneID="t3g-1U-HMs">
+            <objects>
+                <viewController id="78z-QE-qNb" customClass="MainViewController" customModule="TeamBOV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pgf-yy-bgg"/>
+                        <viewControllerLayoutGuide type="bottom" id="YP5-iN-iF1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YjF-Qv-lpl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="authPhoto.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="g9i-Jo-Ex9">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PG9-C1-qZI">
+                                <rect key="frame" x="193" y="275" width="214" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="8Yv-F1-bEy"/>
+                                    <constraint firstAttribute="height" constant="50" id="rJy-LE-4t7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PG9-C1-qZI" firstAttribute="centerX" secondItem="g9i-Jo-Ex9" secondAttribute="centerX" id="8Ya-K0-yvI"/>
+                            <constraint firstItem="g9i-Jo-Ex9" firstAttribute="bottom" secondItem="YP5-iN-iF1" secondAttribute="top" id="Ui8-OU-93G"/>
+                            <constraint firstItem="g9i-Jo-Ex9" firstAttribute="top" secondItem="YjF-Qv-lpl" secondAttribute="top" id="cPk-JK-ChO"/>
+                            <constraint firstItem="g9i-Jo-Ex9" firstAttribute="leading" secondItem="YjF-Qv-lpl" secondAttribute="leading" id="hBv-OC-05w"/>
+                            <constraint firstAttribute="trailing" secondItem="g9i-Jo-Ex9" secondAttribute="trailing" id="mk1-wR-QOH"/>
+                            <constraint firstItem="PG9-C1-qZI" firstAttribute="centerY" secondItem="g9i-Jo-Ex9" secondAttribute="centerY" id="sMe-fs-OmD"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="login" destination="PG9-C1-qZI" id="ZHD-qF-edp"/>
+                        <segue destination="Fd2-L4-Zoa" kind="presentation" identifier="validTeamMember" id="31S-oe-BKs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U6U-yB-L1q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-537" y="-110"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="OyF-gs-tzm">
             <objects>
@@ -1381,4 +1430,7 @@
             <point key="canvasLocation" x="232" y="-110"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="authPhoto.JPG" width="1536" height="2304"/>
+    </resources>
 </document>
