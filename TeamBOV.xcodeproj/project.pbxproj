@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3C1212F51A27999800C9F2B9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1212F41A27999800C9F2B9 /* MainViewController.swift */; };
 		3C1212F71A279A9E00C9F2B9 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C1212F61A279A9E00C9F2B9 /* LocalAuthentication.framework */; };
-		3C1212F91A279ED100C9F2B9 /* authPhoto.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 3C1212F81A279ED100C9F2B9 /* authPhoto.JPG */; };
+		3C1212FB1A28DBB500C9F2B9 /* owl.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C1212FA1A28DBB500C9F2B9 /* owl.png */; };
 		3C7EB41F1A1941BD00FADD1F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7EB41E1A1941BD00FADD1F /* Parse.framework */; };
 		3C7EB4211A1955B700FADD1F /* AccountDetailTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7EB4201A1955B700FADD1F /* AccountDetailTableView.swift */; };
 		3C7EB4231A196D2100FADD1F /* Hud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7EB4221A196D2100FADD1F /* Hud.swift */; };
@@ -64,7 +64,7 @@
 /* Begin PBXFileReference section */
 		3C1212F41A27999800C9F2B9 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3C1212F61A279A9E00C9F2B9 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
-		3C1212F81A279ED100C9F2B9 /* authPhoto.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = authPhoto.JPG; sourceTree = "<group>"; };
+		3C1212FA1A28DBB500C9F2B9 /* owl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = owl.png; sourceTree = "<group>"; };
 		3C7EB41E1A1941BD00FADD1F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		3C7EB4201A1955B700FADD1F /* AccountDetailTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountDetailTableView.swift; sourceTree = "<group>"; };
 		3C7EB4221A196D2100FADD1F /* Hud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hud.swift; sourceTree = "<group>"; };
@@ -197,7 +197,7 @@
 		EC4360EC1A17DA6C0031B198 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3C1212F81A279ED100C9F2B9 /* authPhoto.JPG */,
+				3C1212FA1A28DBB500C9F2B9 /* owl.png */,
 				EC9523491A2139AF00D47EC4 /* SalesSheet.pdf */,
 				EC8358461A1A588A0062908E /* CustomNavigationBar.swift */,
 				3C7EB4221A196D2100FADD1F /* Hud.swift */,
@@ -360,9 +360,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC4360F41A17DA6C0031B198 /* Main.storyboard in Resources */,
+				3C1212FB1A28DBB500C9F2B9 /* owl.png in Resources */,
 				EC4360F91A17DA6C0031B198 /* LaunchScreen.xib in Resources */,
 				EC4360F61A17DA6C0031B198 /* Images.xcassets in Resources */,
-				3C1212F91A279ED100C9F2B9 /* authPhoto.JPG in Resources */,
 				EC95234A1A2139AF00D47EC4 /* SalesSheet.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

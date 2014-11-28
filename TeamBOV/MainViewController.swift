@@ -11,14 +11,15 @@ import LocalAuthentication
 
 class MainViewController: UIViewController, UIAlertViewDelegate {
     @IBOutlet weak var login: UIButton!
+    @IBOutlet weak var owl: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let blurEffect = UIBlurEffect(style: .Dark)
-        let blurView = UIVisualEffectView(effect: blurEffect)
-        blurView.frame = view.frame
-        view.addSubview(blurView)
+//        let blurEffect = UIBlurEffect(style: .Dark)
+//        let blurView = UIVisualEffectView(effect: blurEffect)
+//        blurView.frame = view.frame
+//        view.addSubview(blurView)
         
 //        let vibrancyEffect = UIVibrancyEffect(forBlurEffect: blurEffect)
 //        let vibrancyView = UIVisualEffectView(effect: vibrancyEffect)
@@ -26,14 +27,21 @@ class MainViewController: UIViewController, UIAlertViewDelegate {
 //        vibrancyView.contentView.frame = view.frame
 //        blurView.contentView.addSubview(vibrancyView)
         
+        login.layer.opacity = 0
         login.layer.borderWidth = 1
-        login.layer.borderColor = UIColor.whiteColor().CGColor
+        login.layer.borderColor = UIColor.blackColor().CGColor
         login.layer.cornerRadius = login.frame.height/2
         login.addTarget(self, action: "authenticateUser", forControlEvents: .TouchUpInside)
         
-        view.bringSubviewToFront(login)
-        
-        authenticateUser()
+        UIView.animateWithDuration(1.0, delay: 2.0, options: nil, animations: { () -> Void in
+            self.owl.frame.origin.y -= 104
+        }) { (Bool) -> Void in
+            UIView.animateWithDuration(1.5, delay: 0, options: .TransitionCrossDissolve, animations: { () -> Void in
+                self.login.layer.opacity = 1
+                }) { (Bool) -> Void in
+                    self.authenticateUser()
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

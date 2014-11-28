@@ -1377,35 +1377,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="authPhoto.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="g9i-Jo-Ex9">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="owl.png" translatesAutoresizingMaskIntoConstraints="NO" id="XQY-45-GVS">
+                                <rect key="frame" x="233" y="106" width="135" height="208"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="YW4-en-fPr"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PG9-C1-qZI">
-                                <rect key="frame" x="193" y="275" width="214" height="50"/>
+                                <rect key="frame" x="193" y="391" width="214" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="214" id="8Yv-F1-bEy"/>
-                                    <constraint firstAttribute="height" constant="50" id="rJy-LE-4t7"/>
+                                    <constraint firstAttribute="width" constant="214" id="IuX-bQ-180"/>
+                                    <constraint firstAttribute="height" constant="50" id="yxj-Z8-aiY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Login">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="PG9-C1-qZI" firstAttribute="centerX" secondItem="g9i-Jo-Ex9" secondAttribute="centerX" id="8Ya-K0-yvI"/>
-                            <constraint firstItem="g9i-Jo-Ex9" firstAttribute="bottom" secondItem="YP5-iN-iF1" secondAttribute="top" id="Ui8-OU-93G"/>
-                            <constraint firstItem="g9i-Jo-Ex9" firstAttribute="top" secondItem="YjF-Qv-lpl" secondAttribute="top" id="cPk-JK-ChO"/>
-                            <constraint firstItem="g9i-Jo-Ex9" firstAttribute="leading" secondItem="YjF-Qv-lpl" secondAttribute="leading" id="hBv-OC-05w"/>
-                            <constraint firstAttribute="trailing" secondItem="g9i-Jo-Ex9" secondAttribute="trailing" id="mk1-wR-QOH"/>
-                            <constraint firstItem="PG9-C1-qZI" firstAttribute="centerY" secondItem="g9i-Jo-Ex9" secondAttribute="centerY" id="sMe-fs-OmD"/>
+                            <constraint firstItem="PG9-C1-qZI" firstAttribute="top" secondItem="XQY-45-GVS" secondAttribute="bottom" constant="77" id="Fw0-rd-qPb"/>
+                            <constraint firstItem="XQY-45-GVS" firstAttribute="centerX" secondItem="YjF-Qv-lpl" secondAttribute="centerX" id="b4X-Q3-Zqp"/>
+                            <constraint firstItem="XQY-45-GVS" firstAttribute="top" secondItem="pgf-yy-bgg" secondAttribute="bottom" constant="106" id="ejg-eh-dOW"/>
+                            <constraint firstItem="PG9-C1-qZI" firstAttribute="centerX" secondItem="XQY-45-GVS" secondAttribute="centerX" id="kMe-jm-xYU"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="login" destination="PG9-C1-qZI" id="ZHD-qF-edp"/>
+                        <outlet property="owl" destination="XQY-45-GVS" id="l3K-lP-EBE"/>
                         <segue destination="Fd2-L4-Zoa" kind="presentation" identifier="validTeamMember" id="31S-oe-BKs"/>
                     </connections>
                 </viewController>
@@ -1431,6 +1433,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="authPhoto.JPG" width="1536" height="2304"/>
+        <image name="owl.png" width="146" height="208"/>
     </resources>
 </document>
